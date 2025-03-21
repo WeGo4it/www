@@ -1,0 +1,4 @@
+name = "wego4it"
+
+main = ".worker-next/index.mjs"
+assets = { directory = ".worker-next/assets", binding = "ASSETS" }
