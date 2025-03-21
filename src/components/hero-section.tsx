@@ -72,15 +72,22 @@ export default function HeroSection() {
                                     ...transitionVariants,
                                 }}
                                 className="mt-12">
-                                <form 
-                                    name="contact" 
-                                    method="POST" 
+                                <form
+                                    name="contact"
+                                    method="POST"
                                     data-netlify="true"
-                                    className="mx-auto max-w-sm"
-                                >
+                                    netlify-honeypot="bot-field"
+                                    action="/success"
+                                    className="mx-auto max-w-sm">
+                                    {/* Hidden fields required by Netlify */}
                                     <input type="hidden" name="form-name" value="contact" />
+                                    <div className="hidden">
+                                        <input name="bot-field" />
+                                    </div>
+                                    
                                     <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.5rem)] border pr-2 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
                                         <Mail className="pointer-events-none absolute inset-y-0 left-4 my-auto size-4" />
+
                                         <input
                                             name="email"
                                             placeholder="Your mail address"
@@ -88,6 +95,7 @@ export default function HeroSection() {
                                             type="email"
                                             required
                                         />
+
                                         <div className="md:pr-1.5 lg:pr-0">
                                             <Button
                                                 type="submit"
