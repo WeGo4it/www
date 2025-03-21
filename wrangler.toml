@@ -3,3 +3,5 @@ compatibility_date = "2025-03-21"
 
 pages_build_output_dir = "out"
 
+[build.environment]
+NODE_VERSION = "20.17.0"
