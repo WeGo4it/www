@@ -7,8 +7,9 @@ import { cn } from '@/lib/utils'
 import { ThemeToggle } from '@/components/theme-toggle'
 
 const menuItems = [
-    { name: 'Services', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Services', href: '#services' },
+    { name: 'Why Us', href: '#why-us' },
+    { name: 'Who We Are', href: '#who-we-are' },
 ]
 
 export const NavMiddle = () => {
