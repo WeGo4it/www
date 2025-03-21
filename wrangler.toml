@@ -1,4 +1,5 @@
 name = "wego4it"
+compatibility_date = "2025-03-21"
 
-main = ".worker-next/index.mjs"
-assets = { directory = ".worker-next/assets", binding = "ASSETS" }
+pages_build_output_dir = "out"
+
